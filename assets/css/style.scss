@@ -1,0 +1,71 @@
+
+// Scss Import
+
+@import '_variables', '_media-queries';
+
+
+// Fonts 
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Black;
+    src: url(../fonts/Montserrat-Black.ttf);
+}
+// Main CSS
+body{
+    padding:0 auto;
+    margin: 0 auto;
+    // background: #000;
+    min-height: 360vh;
+    font-family: Montserrat-Regular;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+#hero{
+    // background: #69f07f57;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    background: url("../img/bg-svg.png");
+    background-position: 0 0;
+    background-size: contain;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.a{
+    color: $title;
+    font-size: 70px;
+    // font-weight: ;
+    line-height: 65px;
+    font-family: Montserrat-Black;
+}
+#About{
+    background: #00000079;
+    min-height: 100vh;
+}
+
+#Services{
+    background: #efffa8;
+    min-height: 100vh;
+}
+#Portfolio{
+    background: #000;
+    min-height: 100vh;
+}
+#Contact{
+    background: #efffa8;
+    min-height: 100vh;
+}

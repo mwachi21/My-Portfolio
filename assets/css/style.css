@@ -1,0 +1,66 @@
+@media screen and (min-width: 500px) {
+  #logo {
+    min-height: 20px;
+  }
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Black;
+  src: url(../fonts/Montserrat-Black.ttf);
+}
+body {
+  padding: 0 auto;
+  margin: 0 auto;
+  min-height: 360vh;
+  font-family: Montserrat-Regular;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+
+#hero {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  background: url("../img/bg-svg.png");
+  background-position: 0 0;
+  background-size: contain;
+  scroll-behavior: smooth;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.a {
+  color: #d5271c;
+  font-size: 70px;
+  line-height: 65px;
+  font-family: Montserrat-Black;
+}
+
+#About {
+  background: rgba(0, 0, 0, 0.4745098039);
+  min-height: 100vh;
+}
+
+#Services {
+  background: #efffa8;
+  min-height: 100vh;
+}
+
+#Portfolio {
+  background: #000;
+  min-height: 100vh;
+}
+
+#Contact {
+  background: #efffa8;
+  min-height: 100vh;
+}/*# sourceMappingURL=style.css.map */
