@@ -30,6 +30,60 @@ header{
     left: 0;
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .6s;
+    padding: 40px 100px;
+    z-index: 1000;
+    .logo{
+        position: relative;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            position: relative;
+            list-style: none;
+
+            a{
+                position: relative;
+                margin: 0 15px;
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+header.sticky{
+    background: #ffffff;
+    .logo{
+        position: relative;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            position: relative;
+            list-style: none;
+
+            a{
+                position: relative;
+                margin: 0 15px;
+                text-decoration: none;
+            }
+        }
+    }
 }
 #hero{
     // background: #69f07f57;

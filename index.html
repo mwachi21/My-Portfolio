@@ -69,5 +69,14 @@
     <div id="Contact">
         Contact
     </div>
+
+    <!-- Javascript -->
+
+    <script type="text/Javascript">
+        window.addEventListener("scroll", function() {
+           var header = document.querySelector("header");
+           header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
 </body>
 </html>
