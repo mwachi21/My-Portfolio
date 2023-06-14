@@ -1,3 +1,14 @@
+// REfreshes HTML
+function refreshHTML() {
+    // Code to update the HTML content goes here
+    var element = document.getElementById("your-element-id");
+    element.innerHTML = "New content"; // Replace with the updated content
+    console.log("HTML refreshed!");
+  }
+  
+  setTimeout(refreshHTML, 500);
+  
+  
 
 // Header animation
 
@@ -6,13 +17,3 @@ window.addEventListener("scroll", function() {
     header.classList.toggle("sticky", window.scrollY > 0)
  })
 
-
-//  scroll
-const boxes = document.querySelectorAll('div');
-window.addEventListener('scroll', checkBoxes);
-
-checkBoxes();
-
-function checkBoxes(){
-    console.log(window.innerHeight);
-}
