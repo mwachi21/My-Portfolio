@@ -20,6 +20,8 @@ body{
     margin: 0 auto;
     // background: #000;
     min-height: 360vh;
+    user-select: none;
+    cursor: comparable($number1: 24, $number2: 29);
     font-family: Montserrat-Regular;
 
 }
@@ -69,12 +71,14 @@ header{
 }
 
 header.sticky{
-    background: #ffffff;
+    background: rgba($color: #ffffff, $alpha: 0.6);
     padding: 20px 80px;
+    backdrop-filter: blur(5px);
     .logo{
         position: relative;
         font-weight: 700;
         text-decoration: none;
+        // filter: blur(1px);
     }
     ul{
         position: relative;
@@ -98,7 +102,7 @@ header.sticky{
 }
 
 #soc{
-    background: #000;
+    // background: #000;
     width: 8%;
     left: 5px;
     animation-duration: 1s;
@@ -116,14 +120,23 @@ header.sticky{
                 line-height: 45px;
                 header ul li a i,i{
                     font-size: 22px;
+                    color: $cyan;
+                    transition: .7s;
                     &:hover{
                         font-size: 24px;
+                        color: $dcyan;
                     }
                 }
             }
         }
     }
 }
+
+.a{
+    text-align: left;
+    align-items: flex-start;
+}
+
 #hero{
     // background: #69f07f57;
     min-height: 100vh;
