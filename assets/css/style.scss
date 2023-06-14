@@ -54,6 +54,14 @@ header{
                 position: relative;
                 margin: 0 15px;
                 text-decoration: none;
+                button{
+                    background: #000;
+                    border: none;
+                    color: #ffffff;
+                    border-radius: 3px;
+                    text-align: left;
+                    padding: 2px 25px;
+                }
             }
         }
     }
@@ -62,6 +70,7 @@ header{
 
 header.sticky{
     background: #ffffff;
+    padding: 20px 80px;
     .logo{
         position: relative;
         font-weight: 700;
@@ -80,6 +89,25 @@ header.sticky{
             a{
                 position: relative;
                 margin: 0 15px;
+                text-decoration: none;
+                color: $title;
+                
+            }
+        }
+    }
+}
+
+#soc{
+    background: #000;
+    left: 5px;
+    top: 43vh;
+    position: absolute;
+    ol{
+        text-align: center;
+        li{
+            list-style: none;
+            align-items: center;
+            a{
                 text-decoration: none;
             }
         }

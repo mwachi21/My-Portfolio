@@ -50,9 +50,18 @@ header ul li a {
   margin: 0 15px;
   text-decoration: none;
 }
+header ul li a button {
+  background: #000;
+  border: none;
+  color: #ffffff;
+  border-radius: 3px;
+  text-align: left;
+  padding: 2px 25px;
+}
 
 header.sticky {
   background: #ffffff;
+  padding: 20px 80px;
 }
 header.sticky .logo {
   position: relative;
@@ -72,6 +81,24 @@ header.sticky ul li {
 header.sticky ul li a {
   position: relative;
   margin: 0 15px;
+  text-decoration: none;
+  color: #d5271c;
+}
+
+#soc {
+  background: #000;
+  left: 5px;
+  top: 43vh;
+  position: absolute;
+}
+#soc ol {
+  text-align: center;
+}
+#soc ol li {
+  list-style: none;
+  align-items: center;
+}
+#soc ol li a {
   text-decoration: none;
 }
 
