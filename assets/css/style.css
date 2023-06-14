@@ -87,9 +87,12 @@ header.sticky ul li a {
 
 #soc {
   background: #000;
+  width: 8%;
   left: 5px;
+  animation-duration: 1s;
+  transition-duration: 800ms;
   top: 43vh;
-  position: absolute;
+  position: fixed;
 }
 #soc ol {
   text-align: center;
@@ -97,9 +100,17 @@ header.sticky ul li a {
 #soc ol li {
   list-style: none;
   align-items: center;
+  transform: translateX(-24px);
 }
 #soc ol li a {
   text-decoration: none;
+  line-height: 45px;
+}
+#soc ol li a header ul li a i, #soc ol li a i {
+  font-size: 22px;
+}
+#soc ol li a header ul li a i:hover, #soc ol li a i:hover {
+  font-size: 24px;
 }
 
 #hero {
