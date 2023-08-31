@@ -14,7 +14,6 @@
   margin: auto;
   top: 80px;
 }
-
 .container .box {
   position: relative;
   width: 275px;
@@ -26,8 +25,7 @@
   margin-right: 15px;
   margin-top: 45px;
 }
-
-.container:hover .box {
+.container .container:hover .box {
   transform: rotateY(25deg);
 }
 
@@ -244,11 +242,18 @@ header.sticky ul li a {
   position: relative;
   z-index: 1;
   background: url("../img/bg-svg.png");
+  background-blend-mode: color-burn;
   background-position: 0 0;
   background-size: contain;
   scroll-behavior: smooth;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+#hero a {
+  text-decoration: none;
+}
+#hero a #btns-1 {
+  color: #d5271c;
 }
 
 .a {
