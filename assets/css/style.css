@@ -14,6 +14,7 @@
   margin: auto;
   top: 80px;
 }
+
 .container .box {
   position: relative;
   width: 275px;
@@ -25,7 +26,8 @@
   margin-right: 15px;
   margin-top: 45px;
 }
-.container .container:hover .box {
+
+.container:hover .box {
   transform: rotateY(25deg);
 }
 
@@ -242,19 +244,33 @@ header.sticky ul li a {
   position: relative;
   z-index: 1;
   background: url("../img/bg-svg.png");
-  background-blend-mode: color-burn;
   background-position: 0 0;
   background-size: contain;
   scroll-behavior: smooth;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+<<<<<<< HEAD
 #hero a {
   text-decoration: none;
 }
 #hero a #btns-1 {
   color: #d5271c;
 }
+#hero .col-md-5 #btns-1 {
+  padding: 12px 9px;
+  margin-left: 50px;
+  background: #140101;
+  border: 12px blue;
+  border-radius: 9px;
+  transition: 500ms;
+}
+#hero .col-md-5 #btns-1:hover {
+  background: #c5c5c5;
+  color: #d5271c;
+}
+=======
+>>>>>>> parent of 1493e72 (progres footer and buttons)
 
 .a {
   color: #d5271c;
@@ -281,4 +297,11 @@ header.sticky ul li a {
 #Contact {
   background: #efffa8;
   min-height: 100vh;
+}
+
+#footer {
+  background: url("../img/Asset 1.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 480px;
 }/*# sourceMappingURL=style.css.map */

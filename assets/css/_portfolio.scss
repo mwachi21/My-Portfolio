@@ -9,21 +9,21 @@
     perspective: 500px;
     margin: auto;
     top: 80px;
-        .box {
-      position: relative;
-      width: 275px;
-      height: 275px;
-      background: #000;
-      transition: 0.5s;
-      transform-style: preserve-3d;
-      overflow: hidden;
-      margin-right: 15px;
-      margin-top: 45px;
-    }.container:hover .box {
+  }
+  .container .box {
+    position: relative;
+    width: 275px;
+    height: 275px;
+    background: #000;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 45px;
+  }
+  .container:hover .box {
     transform: rotateY(25deg);
   }
-  }
-  
   .container .box .imgBx {
     position: absolute;
     top: 0;

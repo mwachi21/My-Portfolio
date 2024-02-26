@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: my-portfolio-mwachi21.vercel.app
+Token: eeb9ea4a560b36c9e48bb47fd01c6fef6ba14fd19d29b4d987b4852971609dbc

@@ -143,18 +143,11 @@ header.sticky{
     position: relative;
     z-index: 1;
     background: url("../img/bg-svg.png");
-    background-blend-mode: color-burn;
     background-position: 0 0;
     background-size: contain;
     scroll-behavior: smooth;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    a{
-        text-decoration: none;
-    #btns-1{
-        color: $title;
-    }
-    }
 
 }
 
@@ -181,4 +174,10 @@ header.sticky{
 #Contact{
     background: #efffa8;
     min-height: 100vh;
+}
+#footer{
+    background: url("../img/Asset\ 1.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 480px;
 }
