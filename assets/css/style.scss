@@ -21,7 +21,7 @@ body{
     // background: #000;
     min-height: 360vh;
     user-select: none;
-    cursor: comparable($number1: 24, $number2: 29);
+    // cursor: comparable($number1: 24, $number2: 29);
     font-family: Montserrat-Regular;
 
 }
@@ -101,6 +101,20 @@ header.sticky{
     }
 }
 
+#tracker {
+    position: absolute;
+    z-index: 199;
+    top: 0;
+    left: 0;
+    width: 20px; 
+    height: 20px; 
+    background-color: $title; /* Semi-transparent red */
+    border-radius: 50%;
+    pointer-events: none; /* This ensures that the div does not interfere with mouse events */
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth transition effect with cubic-bezier easing */
+    transform-origin: center; /* Transform origin set to the center of the div */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+  }
 #soc{
     // background: #000;
     width: 8%;

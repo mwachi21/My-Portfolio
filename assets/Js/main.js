@@ -17,3 +17,16 @@ window.addEventListener("scroll", function() {
     header.classList.toggle("sticky", window.scrollY > 0)
  })
 
+ const tracker = document.getElementById('tracker');
+
+ document.addEventListener('mousemove', (event) => {
+   // Calculate the translation values for smooth movement
+   const translateX = event.clientX - tracker.offsetWidth / 2;
+   const translateY = event.clientY - tracker.offsetHeight / 2;
+
+   // Apply a slight rotation for a more natural feel
+   const rotation = (event.clientX / window.innerWidth - 0.5) * 30; // Rotate up to 15 degrees in either direction
+
+   // Apply the translation and rotation using transform property
+   tracker.style.transform = `translate(${translateX}px, ${translateY}px) rotate(${rotation}deg)`;
+ });

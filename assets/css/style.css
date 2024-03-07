@@ -131,7 +131,6 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  cursor: true;
   font-family: Montserrat-Regular;
 }
 
@@ -204,6 +203,21 @@ header.sticky ul li a {
   color: #d5271c;
 }
 
+#tracker {
+  position: absolute;
+  z-index: 199;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #d5271c; /* Semi-transparent red */
+  border-radius: 50%;
+  pointer-events: none; /* This ensures that the div does not interfere with mouse events */
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth transition effect with cubic-bezier easing */
+  transform-origin: center; /* Transform origin set to the center of the div */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+}
+
 #soc {
   width: 8%;
   left: 5px;
@@ -250,27 +264,6 @@ header.sticky ul li a {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-<<<<<<< HEAD
-#hero a {
-  text-decoration: none;
-}
-#hero a #btns-1 {
-  color: #d5271c;
-}
-#hero .col-md-5 #btns-1 {
-  padding: 12px 9px;
-  margin-left: 50px;
-  background: #140101;
-  border: 12px blue;
-  border-radius: 9px;
-  transition: 500ms;
-}
-#hero .col-md-5 #btns-1:hover {
-  background: #c5c5c5;
-  color: #d5271c;
-}
-=======
->>>>>>> parent of 1493e72 (progres footer and buttons)
 
 .a {
   color: #d5271c;
