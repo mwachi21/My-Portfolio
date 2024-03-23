@@ -30,3 +30,12 @@ window.addEventListener("scroll", function() {
    // Apply the translation and rotation using transform property
    tracker.style.transform = `translate(${translateX}px, ${translateY}px) rotate(${rotation}deg)`;
  });
+
+//  Footer Copy right
+
+const paragraph = `
+ <p>
+    Copyright &copy; 2023 - ${new Date().getFullYear()} Dennis
+ </p>
+`;
+document.getElementById('copyright').innerHTML = paragraph;

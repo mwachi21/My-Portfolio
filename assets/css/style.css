@@ -276,6 +276,14 @@ header.sticky ul li a {
   background: rgba(0, 0, 0, 0.4745098039);
   min-height: 100vh;
 }
+#About #scard {
+  width: 90%;
+  height: 80vh;
+  background: #ffffff;
+  margin-left: 5%;
+  margin-top: 7%;
+  border-radius: 25px;
+}
 
 #Services {
   background: #efffa8;
@@ -293,8 +301,26 @@ header.sticky ul li a {
 }
 
 #footer {
-  background: url("../img/Asset 1.svg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 480px;
+  background: #001b19;
+  max-height: 15vh;
+  align-items: center;
+  position: relative;
+  padding: 3px;
+}
+#footer #copyright {
+  left: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2px;
+  color: #f6ffd0;
+  margin: 0px;
+  padding: 0%;
+  background: #001b19;
+  transform: translateY(40px);
+}
+#footer a {
+  transform: translateY(-60px);
+  position: absolute;
+  margin-left: 45px;
 }/*# sourceMappingURL=style.css.map */
