@@ -23,6 +23,7 @@ body{
     user-select: none;
     // cursor: comparable($number1: 24, $number2: 29);
     font-family: Montserrat-Regular;
+    overflow-x: hidden;
 
 }
 
@@ -56,14 +57,6 @@ header{
                 position: relative;
                 margin: 0 15px;
                 text-decoration: none;
-                button{
-                    background: #000;
-                    border: none;
-                    color: #ffffff;
-                    border-radius: 3px;
-                    text-align: left;
-                    padding: 2px 25px;
-                }
             }
         }
     }
@@ -94,8 +87,11 @@ header.sticky{
                 position: relative;
                 margin: 0 15px;
                 text-decoration: none;
+                transition-duration: 300ms;
                 color: $title;
-                
+                &:hover,&::after,&:active{
+                    color: $title-h;
+                }
             }
         }
     }
@@ -121,10 +117,22 @@ header.sticky{
     left: 5px;
     animation-duration: 1s;
     transition-duration: 800ms;
-    top: 43vh;
+    top: 25vh;
     position: fixed;
     ol{
         text-align: center;
+        .ln{
+            background: $cyan;
+            height: 125px;
+            width: 3px;
+            transform: translateX(9px);
+        }
+        .l-n{
+            background: $cyan;
+            height: 17px;
+            width: 3px;
+            transform: translateX(9px);
+        }
         li{
             list-style: none;
             align-items: center;
@@ -197,12 +205,25 @@ header.sticky{
     background: #efffa8;
     min-height: 100vh;
 }
+#Brands{
+    background: #000;
+    margin-top: 50px;
+    min-height: 18vh;
+    align-items: center;
+    text-align: center;
+    color: $grey;
+    #r-space{
+            background: #ffe5e5;
+            max-height: 16vh;
+    }
+}
 #footer{
     background: $dark;
-    max-height: 15vh;
+    min-height: 25vh;
     align-items: center;
-    position: relative;
-    padding: 3px;
+    margin-top: 50px;
+    // position: relative;
+    padding: 19px 4px;
     #copyright{
         left: 50%;
         display: flex;
@@ -211,13 +232,7 @@ header.sticky{
         margin-bottom: 2px;
         color: #f6ffd0;
         margin: 0px;
-        padding: 0%;
-        background: $dark;
+        padding: 3px;
         transform: translateY(40px);
-    }
-    a{
-        transform: translateY(-60px);
-        position: absolute;
-        margin-left: 45px;
     }
 }

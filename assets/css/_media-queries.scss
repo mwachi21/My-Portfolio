@@ -4,3 +4,9 @@
     #logo{
 min-height: 20px;    }
 }
+
+@media screen and (max-width : 1070px) {
+    header{
+        display: none;
+    }
+}

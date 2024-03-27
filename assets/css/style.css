@@ -3,6 +3,11 @@
     min-height: 20px;
   }
 }
+@media screen and (max-width: 1070px) {
+  header {
+    display: none;
+  }
+}
 .container {
   position: relative;
   width: 1160px;
@@ -132,6 +137,7 @@ body {
      -moz-user-select: none;
           user-select: none;
   font-family: Montserrat-Regular;
+  overflow-x: hidden;
 }
 
 header {
@@ -166,14 +172,6 @@ header ul li a {
   margin: 0 15px;
   text-decoration: none;
 }
-header ul li a button {
-  background: #000;
-  border: none;
-  color: #ffffff;
-  border-radius: 3px;
-  text-align: left;
-  padding: 2px 25px;
-}
 
 header.sticky {
   background: rgba(255, 255, 255, 0.6);
@@ -200,7 +198,11 @@ header.sticky ul li a {
   position: relative;
   margin: 0 15px;
   text-decoration: none;
+  transition-duration: 300ms;
   color: #d5271c;
+}
+header.sticky ul li a:hover, header.sticky ul li a::after, header.sticky ul li a:active {
+  color: #520081;
 }
 
 #tracker {
@@ -223,11 +225,23 @@ header.sticky ul li a {
   left: 5px;
   animation-duration: 1s;
   transition-duration: 800ms;
-  top: 43vh;
+  top: 25vh;
   position: fixed;
 }
 #soc ol {
   text-align: center;
+}
+#soc ol .ln {
+  background: #25e6b5;
+  height: 125px;
+  width: 3px;
+  transform: translateX(9px);
+}
+#soc ol .l-n {
+  background: #25e6b5;
+  height: 17px;
+  width: 3px;
+  transform: translateX(9px);
 }
 #soc ol li {
   list-style: none;
@@ -300,12 +314,25 @@ header.sticky ul li a {
   min-height: 100vh;
 }
 
+#Brands {
+  background: #000;
+  margin-top: 50px;
+  min-height: 18vh;
+  align-items: center;
+  text-align: center;
+  color: #cbcbcb;
+}
+#Brands #r-space {
+  background: #ffe5e5;
+  max-height: 16vh;
+}
+
 #footer {
   background: #001b19;
-  max-height: 15vh;
+  min-height: 25vh;
   align-items: center;
-  position: relative;
-  padding: 3px;
+  margin-top: 50px;
+  padding: 19px 4px;
 }
 #footer #copyright {
   left: 50%;
@@ -315,12 +342,6 @@ header.sticky ul li a {
   margin-bottom: 2px;
   color: #f6ffd0;
   margin: 0px;
-  padding: 0%;
-  background: #001b19;
+  padding: 3px;
   transform: translateY(40px);
-}
-#footer a {
-  transform: translateY(-60px);
-  position: absolute;
-  margin-left: 45px;
 }/*# sourceMappingURL=style.css.map */
