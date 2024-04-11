@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3; /* Background color for the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height */
+    margin: 0;
+  }
+  
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Background color with transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    pointer-events: none; /* This allows click events to go through the preloader */
+  }
+  
+  .custom-container {
+    position: relative;
+    border-radius: 50%;
+    height: 64px; /* Default size for tablet */
+    width: 64px; /* Default size for tablet */
+    animation: rotate_3922 3.5s linear infinite;
+    background: #9b59b6;
+    background: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+  
+    span {
+      position: absolute;
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+      background: #9b59b6;
+      background: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+  
+      &:nth-of-type(1) {
+        filter: blur(2px); /* Reduced blur for mobile */
+      }
+  
+      &:nth-of-type(2) {
+        filter: blur(4px); /* Reduced blur for mobile */
+      }
+  
+      &:nth-of-type(3) {
+        filter: blur(8px); /* Reduced blur for mobile */
+      }
+  
+      &:nth-of-type(4) {
+        filter: blur(12px); /* Reduced blur for mobile */
+      }
+    }
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px; /* Adjusted spacing for mobile */
+      left: 5px; /* Adjusted spacing for mobile */
+      right: 5px; /* Adjusted spacing for mobile */
+      bottom: 5px; /* Adjusted spacing for mobile */
+      background-color: #fff;
+      border: solid 3px #ffffff; /* Reduced border thickness for mobile */
+      border-radius: 50%;
+    }
+  }
+  
+  @keyframes rotate_3922 {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .content {
+    // padding: 20px;
+    text-align: center;
+    display: none; /* Initially hidden */
+  }
+  
+  @media (max-width: 576px) {
+    /* For devices smaller than tablet (mobile phones) */
+    .preloader {
+      .custom-container {
+        height: 128px; /* Larger size for mobile */
+        width: 128px; /* Larger size for mobile */
+  
+        span {
+          &:nth-of-type(1) {
+            filter: blur(4px); /* Adjusted blur for mobile */
+          }
+  
+          &:nth-of-type(2) {
+            filter: blur(8px); /* Adjusted blur for mobile */
+          }
+  
+          &:nth-of-type(3) {
+            filter: blur(16px); /* Adjusted blur for mobile */
+          }
+  
+          &:nth-of-type(4) {
+            filter: blur(24px); /* Adjusted blur for mobile */
+          }
+        }
+  
+        &::after {
+          top: 8px; /* Adjusted spacing for mobile */
+          left: 8px; /* Adjusted spacing for mobile */
+          right: 8px; /* Adjusted spacing for mobile */
+          bottom: 8px; /* Adjusted spacing for mobile */
+          border: solid 4px #ffffff; /* Adjusted border thickness for mobile */
+        }
+      }
+    }
+  }
+  
+  

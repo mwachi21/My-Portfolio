@@ -1,7 +1,7 @@
 
 // Scss Import
 
-@import '_variables', '_media-queries','_portfolio';
+@import '_variables', '_media-queries','_portfolio','_pre-loader';
 
 
 // Fonts 
@@ -225,7 +225,6 @@ header.sticky{
     // position: relative;
     padding: 19px 4px;
     #copyright{
-        left: 50%;
         display: flex;
         text-align: center;
         justify-content: center;
