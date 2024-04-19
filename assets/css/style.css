@@ -225,6 +225,12 @@ body {
     border: solid 4px #ffffff; /* Adjusted border thickness for mobile */
   }
 }
+.video {
+  width: 190px;
+  aspect-ratio: 16/9;
+  background: #006b50;
+}
+
 @font-face {
   font-family: Montserrat-Regular;
   src: url(../fonts/Montserrat-Regular.ttf);

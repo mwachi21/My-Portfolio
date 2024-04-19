@@ -1,7 +1,7 @@
 
 // Scss Import
 
-@import '_variables', '_media-queries','_portfolio','_pre-loader';
+@import '_variables', '_media-queries','_portfolio','_pre-loader','_video';
 
 
 // Fonts 
@@ -18,7 +18,6 @@
 body{
     padding:0 auto;
     margin: 0 auto;
-    // background: #000;
     min-height: 360vh;
     user-select: none;
     // cursor: comparable($number1: 24, $number2: 29);
