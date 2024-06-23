@@ -11,6 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
         preloader.style.display = "none";
         content.style.display = "block";
       }, 800); // Wait for fade out animation to finish (0.8 seconds)
-    }, 3500); // 3.5 seconds
+    }, 500); // .5 seconds
   });
   

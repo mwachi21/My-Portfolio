@@ -5,7 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Home</title>
+    
+        <!-- Apple Touch Icon -->
+        <link rel="apple-touch-icon" sizes="312x312" href="assets/icons/icon-312x312.png">
+
+        <!-- Android Icon -->
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-312x312.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/icon-312x312.png">
+    
+        <!-- Favicon for other browsers -->
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-312x312.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/icon-312x312.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/icon-312x312.png">
+    
+        <!-- Manifest file for Android -->
+        <link rel="manifest" href="manifest.json">
+    
+        <!-- Metadata for Windows -->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="assets/icon-312x312.png">
+        <meta name="theme-color" content="#000000">
+    
+    
+    <title>Portfolio Home</title>
 
   <!-- Bootstrap Vendor CSS Files -->
 
@@ -125,9 +147,10 @@
 
         <!-- Cards -->
         <div class="container">
-  <div class="box">
+            Portfolio
+          <div class="box" onclick="window.location.href='design.html'">
     <div class="imgBx">
-      <img src="assets/img/photo-1661559874776-f1277bc8a565.jpg">
+      <img src="assets/img/graphic-design.jpg">
     </div>
     <div class="content">
       <div>
@@ -139,19 +162,7 @@
   </div>
   <div class="box">
     <div class="imgBx">
-      <img src="assets/img/photo-1660032109903-f81365ca1f95.jpg">
-    </div>
-    <div class="content">
-      <div>
-        <h2>Web development</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="imgBx">
-      <img src="assets/img/photo-1660032110824-417ffd01d7fc.jpg">
+      <img src="assets/img/video-ed.jpg">
     </div>
     <div class="content">
       <div>
@@ -161,14 +172,23 @@
       </div>
     </div>
   </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src="assets/img/web-dev.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 <!-- End of Cards -->
-    </div>
+    
 
-    <!-- Contact -->
-    <div id="Contact">
-        Contact
-    </div>
 
     <!-- Brands -->
     <div id="Brands" class="container-fluid">
@@ -180,12 +200,34 @@
       </div>
     </div>
 
+    <!-- Contact -->
+    <div id="Contact">
+        <div class="container">
+          <img src="assets/img/pl.png" alt="not found" width="45%">
+          <div class="col-md-2" >
+           <video class="cont" src="assets/img/3d-integrate-morning.mp4" autoplay loop width="80%" nopip></video> 
+          </div>
+            <div class="col-lg-8">
+              
+              <form action="" method="">
+                <textarea name="Message" id="message" cols="30" rows="4"></textarea><br>
+              <input type="submit" cols="30" value="SUBMIT">
+            </form>
+          </div>
+          <div class="col-md-2" id="send">
+            QWERTY
+          </div>
+        </div>
+        
+
+    </div>
+
     <!-- Footer -->
       <div id="footer" class="container-fluid">
         <div class="row">
           <div class="col-md-1"></div>
           <a href="#" class="col-md-2">
-           <img src="assets/img/spartan logo-color-dark-landscape.svg" alt="Not found" width="100px">
+           <img src="assets/img/spartan logo-color-dark-landscape.svg" width="80%" alt="Not found" width="100px">
           </a>
         <div id="copyright" class="col col-md-6"></div>
       <div class="col-md-3">

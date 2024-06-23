@@ -1,7 +1,7 @@
 
 // Scss Import
 
-@import '_variables', '_media-queries','_portfolio','_pre-loader','_video';
+@import '_variables', '_pages','_media-queries','_portfolio','_pre-loader','_video';
 
 
 // Fonts 
@@ -105,7 +105,7 @@ header.sticky{
     height: 20px; 
     background-color: $title; /* Semi-transparent red */
     border-radius: 50%;
-    pointer-events: none; /* This ensures that the div does not interfere with mouse events */
+    pointer-events: none; /* This ensures that the                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   div does not interfere with mouse events */
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth transition effect with cubic-bezier easing */
     transform-origin: center; /* Transform origin set to the center of the div */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
@@ -180,7 +180,8 @@ header.sticky{
     font-family: Montserrat-Black;
 }
 #About{
-    background: #00000079;
+    background-image: linear-gradient( #F3F3F3,#e4e4e4);
+    // background: url(../img/bg-gr.svg);
     min-height: 100vh;
     #scard{
         width: 90%;
@@ -201,9 +202,23 @@ header.sticky{
     min-height: 100vh;
 }
 #Contact{
-    background: #efffa8;
-    min-height: 100vh;
+    // background: #efffa8;
+    background: #000;
+    min-height: 40vh;
+    margin-top: 20px;
+    overflow: hidden;
+    .cont{
+            margin-left: 50px;
+            transform: scale(1.4);  
+    }
+    img{
+        position: absolute;
+        transform: translateX(397px);
+        margin-top: -90px;
+        z-index: 23;
+    }
 }
+
 #Brands{
     background: #000;
     margin-top: 50px;
